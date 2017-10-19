@@ -1,4 +1,6 @@
 #A small web app for searching multiple tags on instagram
+#Takes input in the form of a list of tags, returns oembed code for displaying
+#images on a webpage
 
 import requests
 import json
