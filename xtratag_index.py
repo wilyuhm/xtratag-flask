@@ -20,5 +20,5 @@ def hello(name=None):
 
 @app.route('/xtratag')
 def run():
-	media_files = run_xtratag('sdzoo')
-	return render_template('xtratag.html', media_files=media_files)
+	oembed_codes = run_xtratag('jumpingstilts')
+	return render_template('xtratag.html', oembed_codes=oembed_codes)

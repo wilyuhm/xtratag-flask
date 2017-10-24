@@ -4,7 +4,7 @@
 	<title>XtraTag! A Different Instagram Search</title>
 </head>
 <body>
-	{% for media_file in media_files %}
-  		<img src={{ media_file }}>
+	{% for code in oembed_codes %}
+  		{{ code|oembed(urlize_all=False, maxwidth=600, maxheight=600) }}
 	{% endfor %}
 </body>
